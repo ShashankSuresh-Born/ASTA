@@ -1,0 +1,35 @@
+$header: "asta-auto-header";
+$header-top: "header--top";
+$logo-name: "logo-name";
+$page-type: "page-type";
+$dealer-locator: "dealer-locator";
+$dealer-locator--heading: "dealer-locator--heading";
+$deadler-locator--dropdown: "dealer-locator--dropdown";
+
+.#{$header} {
+	.#{$header-top} {
+		background-color: $azure-radiance-color;
+		padding: 20px 20px 20px 40px;
+		overflow: hidden;
+		.#{$logo-name}, .#{$page-type}, .#{$dealer-locator--heading} {
+			float: left;
+			color: $white-color;
+			text-transform: uppercase;
+			@include fontSize(32px);
+		}
+		.#{$logo-name} {
+			color: $alto-color;
+			margin-right: 30px;
+		}
+		.#{$dealer-locator} {
+			float: right;
+		}
+		.#{$deadler-locator--dropdown} {
+			margin: 2px 30px 0 20px;
+			@include fontSize(32px);
+			color: $white-color;
+			background-color: $azure-radiance-color;
+			border: none;
+		}
+	}
+}

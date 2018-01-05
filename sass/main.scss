@@ -1,9 +1,9 @@
 /* Primary SASS File */
 
 // Modules and Variables
-@import "partials/base";
+@import "helpers/variables";
+@import "helpers/mixins";
 
-// Partials
-@import "partials/reset";
-@import "partials/typography";
-@import "partials/grid";
+// Layout
+@import "layout/grid";
+@import "layout/header";
