@@ -10,6 +10,18 @@
 /*Function for converting a px based font-size to rem.*/
 /*Mixin that will include the fall back px declaration as well as the calculated rem value.*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down-arrow {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 html,
 body {
   height: 100%;
@@ -241,36 +253,174 @@ p {
     display: block;
   }
 }
-.asta-auto-header .header--top {
+.astra-auto-header .__top-header {
   background-color: #008FFF;
-  padding: 20px 20px 20px 40px;
+  padding: 8px 10px 8px 18px;
   overflow: hidden;
 }
-.asta-auto-header .header--top .logo-name,
-.asta-auto-header .header--top .page-type,
-.asta-auto-header .header--top .dealer-locator--heading {
+.astra-auto-header .__top-header .__group-name,
+.astra-auto-header .__top-header .__page-type,
+.astra-auto-header .__top-header .__dealer-locator,
+.astra-auto-header .__top-header .__heading {
   float: left;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
-.asta-auto-header .header--top .logo-name {
+.astra-auto-header .__top-header .__group-name {
   color: #D8D8D8;
-  margin-right: 30px;
+  margin-right: 6px;
 }
-.asta-auto-header .header--top .dealer-locator {
+.astra-auto-header .__top-header .__dealer-locator {
   float: right;
 }
-.asta-auto-header .header--top .dealer-locator .dealer-locator--dropdown {
+.astra-auto-header .__top-header .__dealer-locator .__dropdown {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 0px 30px 0 24px;
-  font-size: 32px;
-  font-size: 2rem;
+  margin: 0px 10px 0 8px;
+  font-size: 12px;
+  font-size: 0.75rem;
   color: #FFFFFF;
   background-color: #008FFF;
+  border: none;
+}
+
+.astra-navbar {
+  padding: 10px 0 !important;
+}
+.astra-navbar .__nav-container {
+  width: 100%;
+}
+.astra-navbar .__nav-container .__logo {
+  padding: 0;
+  margin-left: 16px;
+  float: left;
+}
+.astra-navbar .__nav-container .__logo img {
+  background-color: black;
+}
+.astra-navbar .__nav-container #nav-icon3 {
+  width: 22px;
+  height: 45px;
+  float: left;
+  position: relative;
+  margin-top: 14px;
+  margin-left: 18px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+.astra-navbar .__nav-container #nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #131313;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+.astra-navbar .__nav-container #nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+.astra-navbar .__nav-container #nav-icon3 span:nth-child(2), .astra-navbar .__nav-container #nav-icon3 span:nth-child(3) {
+  top: 6px;
+}
+.astra-navbar .__nav-container #nav-icon3 span:nth-child(4) {
+  top: 12px;
+}
+.astra-navbar .__nav-container #nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.astra-navbar .__nav-container #nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.astra-navbar .__nav-container #nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.astra-navbar .__nav-container #nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.astra-navbar .__nav-container .__action {
+  list-style: none;
+  float: right;
+  padding: 0;
+  margin: 8px 14px;
+}
+.astra-navbar .__nav-container .__action li {
+  float: left;
+}
+.astra-navbar .__nav-container .__action li i {
+  border: none;
+  margin-left: 12px;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+.astra-navbar .__content .__dropdown-toggle::after {
+  display: none !important;
+}
+.astra-navbar .__content .__dropdown-toggle i {
+  border: none;
+  float: right;
+}
+.astra-navbar .__content li {
+  padding: 10px 16px 10px 18px;
+  border-bottom: 1px solid #D8D8D8;
+}
+.astra-navbar .__content li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #131313 !important;
+}
+.astra-navbar .dropdown-menu {
+  position: relative !important;
+  display: none;
+  float: none;
+  border: none;
+}
+.astra-navbar .dropdown-menu.multi-level {
+  padding-bottom: 0;
+}
+.astra-navbar .dropdown-menu.multi-level li {
+  padding: 2px 0px 6px 0px;
+  border: none;
+}
+.astra-navbar .dropdown-menu.multi-level li a {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.astra-navbar .dropdown-menu.multi-level li a:after {
+  display: none;
+}
+.astra-navbar .dropdown-menu.multi-level li .dropdown-toggle i {
   border: none;
 }
 

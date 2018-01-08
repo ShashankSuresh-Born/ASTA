@@ -1,36 +1,34 @@
-$header: "asta-auto-header";
-$header-top: "header--top";
-$logo-name: "logo-name";
-$page-type: "page-type";
-$dealer-locator: "dealer-locator";
-$dealer-locator--heading: "dealer-locator--heading";
-$deadler-locator--dropdown: "dealer-locator--dropdown";
+$header: "astra-auto-header";
+$group-name: "__group-name";
+$dealer-locator: "__dealer-locator";
+$header-font-size: 12px;
 
 .#{$header} {
-    .#{$header-top} {
+    .__top-header {
         background-color: $azure-radiance-color;
-        padding: 20px 20px 20px 40px;
+        padding: 8px 10px 8px 18px;
         overflow: hidden;
-        .#{$logo-name},
-        .#{$page-type},
-        .#{$dealer-locator--heading} {
+        .#{$group-name},
+        .__page-type,
+        .#{$dealer-locator},
+        .__heading {
             float: left;
             color: $white-color;
             text-transform: uppercase;
-            @include fontSize(32px);
+            @include fontSize($header-font-size);
         }
-        .#{$logo-name} {
+        .#{$group-name} {
             color: $alto-color;
-            margin-right: 30px;
+            margin-right: 6px;
         }
         .#{$dealer-locator} {
             float: right;
-            .#{$deadler-locator--dropdown} {
+            .__dropdown {
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 appearance: none;
-                margin: 0px 30px 0 24px;
-                @include fontSize(32px);
+                margin: 0px 10px 0 8px;
+                @include fontSize($header-font-size);
                 color: $white-color;
                 background-color: $azure-radiance-color;
                 border: none;
