@@ -137,6 +137,7 @@ $astra-navbar: "astra-navbar";
                 font-weight: 600;
                 @include fontSize(14px);
                 color: $cod-gray-color !important;
+                text-decoration: none;
             }
         }
     }

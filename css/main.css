@@ -419,6 +419,7 @@ p {
   font-size: 14px;
   font-size: 0.875rem;
   color: #131313 !important;
+  text-decoration: none;
 }
 .astra-navbar .dropdown-menu {
   position: relative !important;
