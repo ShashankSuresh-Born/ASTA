@@ -288,7 +288,7 @@ p {
 }
 
 .astra-navbar {
-  padding: 10px 0 !important;
+  padding: 6px 0 !important;
 }
 .astra-navbar .__nav-container {
   width: 100%;
@@ -306,7 +306,7 @@ p {
   height: 45px;
   float: left;
   position: relative;
-  margin-top: 14px;
+  margin-top: 18px;
   margin-left: 18px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -378,12 +378,31 @@ p {
 }
 .astra-navbar .__nav-container .__action li i {
   border: none;
-  margin-left: 12px;
+  margin-left: 10px;
   font-size: 22px;
   font-size: 1.375rem;
 }
+.astra-navbar .__content .first-level {
+  display: block;
+}
+.astra-navbar .__content ul.navbar-nav:first-child {
+  border-top: 1px solid #EEEEEE;
+}
+.astra-navbar .__content .__dropdown-toggle {
+  display: block;
+}
 .astra-navbar .__content .__dropdown-toggle::after {
   display: none !important;
+  content: "\f067" !important;
+  font-family: "FontAwesome" !important;
+  border: none !important;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0;
+  vertical-align: initial;
+  float: right;
+  padding-right: 20px;
 }
 .astra-navbar .__content .__dropdown-toggle i {
   border: none;
@@ -391,7 +410,8 @@ p {
 }
 .astra-navbar .__content li {
   padding: 10px 16px 10px 18px;
-  border-bottom: 1px solid #D8D8D8;
+  position: relative;
+  border-bottom: 1px solid #EEEEEE;
 }
 .astra-navbar .__content li a {
   text-transform: uppercase;
@@ -405,6 +425,14 @@ p {
   display: none;
   float: none;
   border: none;
+}
+.astra-navbar .dropdown-menu .__content {
+  overflow: hidden;
+}
+.astra-navbar .dropdown-menu .__content li {
+  float: left;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .astra-navbar .dropdown-menu.multi-level {
   padding-bottom: 0;
@@ -422,6 +450,67 @@ p {
 }
 .astra-navbar .dropdown-menu.multi-level li .dropdown-toggle i {
   border: none;
+}
+
+.closed .vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+}
+.closed .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
+.opened {
+  opacity: 1;
+}
+.opened .vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+}
+.opened .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.circle-plus {
+  height: 4em;
+  width: 4em;
+  font-size: 1em;
+  opacity: .7;
+  position: absolute;
+  top: 12px;
+  right: -12px;
+}
+
+.circle-plus .circle {
+  position: relative;
+  width: 2.55em;
+  height: 2.5em;
+}
+
+.circle-plus .circle .horizontal {
+  position: absolute;
+  background-color: black;
+  width: 10px;
+  height: 2px;
+  left: 71%;
+  margin-left: -15px;
+  top: 31%;
+  margin-top: -2.5px;
+}
+
+.circle-plus .circle .vertical {
+  position: absolute;
+  background-color: black;
+  width: 2px;
+  height: 12px;
+  left: 45%;
+  margin-left: -2.5px;
+  top: 50%;
+  margin-top: -15px;
 }
 
 /*# sourceMappingURL=main.css.map */
