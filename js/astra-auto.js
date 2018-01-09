@@ -3,14 +3,6 @@ $(document).ready(function() {
         $(this).toggleClass('open');
     });
 
-    // $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
-    //     event.preventDefault();
-    //     event.stopPropagation();
-    //     $(this)
-    //         .children("ul")
-    //         .slideDown("fast");
-    // });
-
     $('.first-level').on('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
@@ -21,19 +13,20 @@ $(document).ready(function() {
     });
 
     $("ul.multi-level [data-toggle=dropdown]").on('click', function() {
-        // $(".dropdown-menu .__content")
-        //     .slideUp("fast");
         if ($(this).next().is(":visible")) {
             $(this)
                 .next()
                 .slideToggle();
         } else {
-        	$(".dropdown-menu .__content")
-        		.slideUp("fast");
+            $(".dropdown-menu .__content")
+                .slideUp("slow");
             $(this)
                 .next()
-                .slideDown("fast");
+                .slideDown("slow");
         }
+        $(this)
+        	.find("i")
+            .toggleClass("chevron-rotate");
     });
 
     $(".multi-level").on("show.bs.collapse hide.bs.collapse", function() {

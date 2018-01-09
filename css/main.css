@@ -437,45 +437,46 @@ p {
 .astra-navbar .dropdown-menu.multi-level {
   padding-bottom: 0;
 }
-.astra-navbar .dropdown-menu.multi-level li {
+.astra-navbar .dropdown-menu.multi-level .__sub-menu {
   padding: 2px 0px 6px 0px;
   border: none;
 }
-.astra-navbar .dropdown-menu.multi-level li a {
+.astra-navbar .dropdown-menu.multi-level .__sub-menu a {
   text-transform: capitalize;
   font-weight: 400;
 }
-.astra-navbar .dropdown-menu.multi-level li a:after {
+.astra-navbar .dropdown-menu.multi-level .__sub-menu a:after {
   display: none;
 }
-.astra-navbar .dropdown-menu.multi-level li .dropdown-toggle i {
+.astra-navbar .dropdown-menu.multi-level .__sub-menu .dropdown-toggle i {
   border: none;
+  transition: all 0.5s linear;
 }
-
-.closed .vertical {
+.astra-navbar .dropdown-menu.multi-level .__sub-menu .dropdown-toggle i.chevron-rotate {
+  transform: rotate(180deg);
+}
+.astra-navbar .closed .vertical {
   transition: all 0.5s ease-in-out;
   transform: rotate(-90deg);
 }
-.closed .horizontal {
+.astra-navbar .closed .horizontal {
   transition: all 0.5s ease-in-out;
   transform: rotate(-90deg);
   opacity: 1;
 }
-
-.opened {
+.astra-navbar .opened {
   opacity: 1;
 }
-.opened .vertical {
+.astra-navbar .opened .vertical {
   transition: all 0.5s ease-in-out;
   transform: rotate(90deg);
 }
-.opened .horizontal {
+.astra-navbar .opened .horizontal {
   transition: all 0.5s ease-in-out;
   transform: rotate(90deg);
   opacity: 0;
 }
-
-.circle-plus {
+.astra-navbar .circle-plus {
   height: 4em;
   width: 4em;
   font-size: 1em;
@@ -484,14 +485,12 @@ p {
   top: 12px;
   right: -12px;
 }
-
-.circle-plus .circle {
+.astra-navbar .circle-plus .circle {
   position: relative;
   width: 2.55em;
   height: 2.5em;
 }
-
-.circle-plus .circle .horizontal {
+.astra-navbar .circle-plus .circle .horizontal {
   position: absolute;
   background-color: black;
   width: 10px;
@@ -501,8 +500,7 @@ p {
   top: 31%;
   margin-top: -2.5px;
 }
-
-.circle-plus .circle .vertical {
+.astra-navbar .circle-plus .circle .vertical {
   position: absolute;
   background-color: black;
   width: 2px;
