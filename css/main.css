@@ -430,10 +430,26 @@ p {
 .astra-navbar .dropdown-menu .__content {
   overflow: hidden;
 }
+.astra-navbar .dropdown-menu .__content .__img-container {
+  width: 35%;
+  float: left;
+  overflow: hidden;
+}
+.astra-navbar .dropdown-menu .__content .__img-container img {
+  width: 100%;
+}
+.astra-navbar .dropdown-menu .__content .__sub-menu-label {
+  width: 65%;
+  float: left;
+  overflow: hidden;
+}
 .astra-navbar .dropdown-menu .__content li {
   float: left;
   font-size: 14px;
   font-size: 0.875rem;
+  border: none;
+  padding: 10px 0 10px 0;
+  width: 50%;
 }
 .astra-navbar .dropdown-menu.multi-level {
   padding-bottom: 0;
