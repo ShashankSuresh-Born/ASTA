@@ -253,10 +253,6 @@ p {
     display: block;
   }
 }
-body {
-  height: 2000px;
-}
-
 .astra-auto-header {
   left: 0;
   position: fixed;
