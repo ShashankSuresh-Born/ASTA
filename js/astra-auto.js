@@ -9,7 +9,7 @@ $(document).ready(function() {
         $(this)
             .next()
             .slideToggle();
-        $('.circle-plus').toggleClass('opened');
+        $(this).find('.circle-plus').toggleClass('opened');
     });
 
     $("ul.multi-level [data-toggle=dropdown]").on('click', function() {

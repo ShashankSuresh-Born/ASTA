@@ -3,6 +3,11 @@ $group-name: "__group-name";
 $dealer-locator: "__dealer-locator";
 $header-font-size: 12px;
 
+/*Only for testing*/
+body {
+    min-height: 2000px;
+}
+
 .#{$header} {
         left: 0;
         position: fixed;
