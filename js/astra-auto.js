@@ -35,8 +35,8 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         var body = $('body'),
-        	topHeader = $('.__top-header'),
-        	header = $('.astra-auto-header'),
+            topHeader = $('.__top-header'),
+            header = $('.astra-auto-header'),
             scroll = $(window).scrollTop();
 
         if (scroll >= 100) {
@@ -46,5 +46,10 @@ $(document).ready(function() {
             body.removeClass('fixed');
             topHeader.removeClass('hide');
         }
+    });
+
+    $(".single-item").slick({
+        dots: true,
+        arrows: false
     });
 });

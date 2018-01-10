@@ -299,6 +299,10 @@ p {
   top: -34px;
 }
 
+.main-banner {
+  padding-top: 100px;
+}
+
 .astra-navbar {
   padding: 6px 0 !important;
   -webkit-transition: all 0.3s ease;
