@@ -3,11 +3,21 @@ $group-name: "__group-name";
 $dealer-locator: "__dealer-locator";
 $header-font-size: 12px;
 
+body {
+    height: 2000px;
+}
+
 .#{$header} {
+        left: 0;
+        position: fixed;
+        top: 0;
+        transition: all .3s ease;
+        width: 100%;
     .__top-header {
         background-color: $azure-radiance-color;
-        padding: 8px 10px 8px 18px;
         overflow: hidden;
+        padding: 8px 10px 8px 18px;
+        transition: all .3s ease;
         .#{$group-name},
         .__page-type,
         .#{$dealer-locator},
@@ -34,5 +44,11 @@ $header-font-size: 12px;
                 border: none;
             }
         }
+    }
+}
+
+.fixed {
+    .#{$header} {
+        top: -34px;
     }
 }

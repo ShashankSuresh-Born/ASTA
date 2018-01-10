@@ -2,6 +2,10 @@ $astra-navbar: "astra-navbar";
 
 .#{$astra-navbar} {
     padding: 6px 0 !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     .__nav-container {
         width: 100%;
         .__logo {

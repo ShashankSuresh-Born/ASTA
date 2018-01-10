@@ -253,10 +253,22 @@ p {
     display: block;
   }
 }
+body {
+  height: 2000px;
+}
+
+.astra-auto-header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: all .3s ease;
+  width: 100%;
+}
 .astra-auto-header .__top-header {
   background-color: #008FFF;
-  padding: 8px 10px 8px 18px;
   overflow: hidden;
+  padding: 8px 10px 8px 18px;
+  transition: all .3s ease;
 }
 .astra-auto-header .__top-header .__group-name,
 .astra-auto-header .__top-header .__page-type,
@@ -287,8 +299,16 @@ p {
   border: none;
 }
 
+.fixed .astra-auto-header {
+  top: -34px;
+}
+
 .astra-navbar {
   padding: 6px 0 !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .astra-navbar .__nav-container {
   width: 100%;

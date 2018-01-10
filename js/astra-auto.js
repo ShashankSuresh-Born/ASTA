@@ -25,11 +25,26 @@ $(document).ready(function() {
                 .slideDown("slow");
         }
         $(this)
-        	.find("i")
+            .find("i")
             .toggleClass("chevron-rotate");
     });
 
     $(".multi-level").on("show.bs.collapse hide.bs.collapse", function() {
         $('.circle-plus').toggleClass('opened');
+    });
+
+    $(window).scroll(function() {
+        var body = $('body'),
+        	topHeader = $('.__top-header'),
+        	header = $('.astra-auto-header'),
+            scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            body.addClass('fixed');
+            topHeader.addClass('hide');
+        } else {
+            body.removeClass('fixed');
+            topHeader.removeClass('hide');
+        }
     });
 });
