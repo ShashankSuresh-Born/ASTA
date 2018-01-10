@@ -254,4 +254,11 @@ $astra-navbar: "astra-navbar";
             }
         }
     }
+    .__footer {
+        list-style: none;
+        padding-left: 0;
+        li {
+            border: none;
+        }
+    }
 }

@@ -547,5 +547,12 @@ p {
   top: 50%;
   margin-top: -15px;
 }
+.astra-navbar .__footer {
+  list-style: none;
+  padding-left: 0;
+}
+.astra-navbar .__footer li {
+  border: none;
+}
 
 /*# sourceMappingURL=main.css.map */
