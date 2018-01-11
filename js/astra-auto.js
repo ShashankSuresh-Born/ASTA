@@ -47,4 +47,9 @@ $(document).ready(function() {
             topHeader.removeClass('hide');
         }
     });
+
+    $(".single-item").slick({
+        dots: true,
+        arrows: false
+    });
 });

@@ -2,7 +2,7 @@ $footer: "footer";
 
 .#{$footer} {
     background-color: $azure-radiance-color;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     .__content {

@@ -1,0 +1,48 @@
+$price: "price";
+
+.#{$price} {
+    margin-top: -120px;
+    position: relative;
+    padding: 20px;
+    .__container {
+        background-color: $alabaster-color;
+        z-index: 1000001;
+        padding: 40px 20px;
+        border-radius: 12px;
+        .__dropdown-content {
+            .__dropdown {
+                text-align: center;
+                margin-bottom: 22px;
+                position: relative;
+                select {
+                    width: 100%;
+                    padding-top: 12px;
+                    padding-bottom: 10px;
+                    padding-left: 22px;
+                    border-radius: 24px;
+                    background-color: $alabaster-color;
+                    -webkit-appearance: none;
+                    /* for chrome & safari */
+                    -moz-appearance: none;
+                    /* for mozilla */
+                }
+                &:after {
+                    content: "\f078";
+                    font-family: "FontAwesome";
+                    position: absolute;
+                    right: 22px;
+                    top: 22px;
+                    font-size: 9px;
+                }
+                &:before {
+                    content: "\f077";
+                    font-family: "FontAwesome";
+                    position: absolute;
+                    right: 22px;
+                    top: 12px;
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}

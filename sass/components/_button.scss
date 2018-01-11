@@ -1,42 +1,56 @@
 /*Buttons*/
-.button-primary {
-}
 
-.button-secondary {
-}
+.button {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 0;
+    @include fontSize(12px);
+    &.primary-btn {
+        background-color: $azure-radiance-color;
+        color: $white-color;
+    }
 
-.button-disabled {
+    &.secondary-btn {}
+
+    &.disabled-btn {}
 }
 
 
 /*Text Links*/
-.link-primary {
-}
 
-.link-secondary {
-}
+.link-primary {}
 
-.link-tertiary {
-}
+.link-secondary {}
+
+.link-tertiary {}
+
+
+
+
+
 
 
 /*Heading*/
-.heading-1 {
-}
 
-.heading-2 {
-}
+.heading-1 {}
 
-.heading-3 {
-}
+.heading-2 {}
 
-.heading-4 {
-}
+.heading-3 {}
+
+.heading-4 {}
+
+
+
+
+
 
 
 /*Paragraphs*/
-.paragraph-1 {
-}
 
-.paragraph-2 {
-}
+.paragraph-1 {}
+
+.paragraph-2 {}
