@@ -34,14 +34,15 @@ $footer: "footer";
         }
     }
     .__subscribe {
-        padding: 0 30px 0 18px;
+        padding: 14px 30px 0 18px;
         .__label {
+            padding-bottom: 10px;
             color: $white-color;
             text-transform: uppercase;
             @include fontSize(14px);
         }
         .__subscribe-text-container {
-        	position: relative;
+            position: relative;
             .__text {
                 border-radius: 20px;
                 background-color: $azure-radiance-color;
@@ -61,10 +62,40 @@ $footer: "footer";
                 top: 8px;
                 color: $white-color;
                 i {
-                	border: none;
-                	color: $white-color;
+                    border: none;
+                    color: $white-color;
                 }
             }
+        }
+    }
+    .__social {
+        overflow: hidden;
+        padding-top: 25px;
+        .__label {
+            float: left;
+            padding-right: 20px;
+            label {
+                color: $white-color;
+            }
+        }
+        .__icons {
+            float: left;
+            i {
+                padding-right: 12px;
+                border: none;
+                color: $white-color;
+                @include fontSize(18px);
+            }
+        }
+    }
+    .__copyright {
+    	text-align: center;
+        text-transform: capitalize;
+        border-top: 1px solid $dodger-blue;
+        padding: 20px 0;
+        label {
+        	@include fontSize(14px);
+            color: $white-color;
         }
     }
 }
