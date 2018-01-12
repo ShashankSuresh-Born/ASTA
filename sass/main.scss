@@ -3,19 +3,18 @@
 // Modules and Variables
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "components/button";
+@import "components/common";
 
 // Components
 @import "components/main";
 @import "components/navigation";
 @import "components/price";
 @import "components/chat";
+@import "components/steps";
+@import "components/maintenance";
 
 // Layout
 @import "layout/grid";
 @import "layout/header";
 @import "layout/main-banner";
 @import "layout/footer";
-
-
-

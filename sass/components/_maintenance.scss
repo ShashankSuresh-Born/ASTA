@@ -1,0 +1,25 @@
+$maintenance: "maintenance-steps";
+
+.#{$maintenance} {
+    .content {
+        text-align: center;
+        @include fontSize(12px);
+    }
+    .maintenance-banner {
+        .slick-slide {
+            margin: 0px 10px;
+            img {
+                width: 100%;
+            }
+        }
+        .slick-dots {
+            li {
+                button {
+                    &:before {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

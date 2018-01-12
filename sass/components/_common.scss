@@ -1,0 +1,107 @@
+/*Buttons*/
+
+.button {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 0;
+    @include fontSize(12px);
+    &.primary-btn {
+        background-color: $azure-radiance-color;
+        color: $white-color;
+    }
+
+    &.secondary-btn {}
+
+    &.disabled-btn {}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Text Links*/
+
+.link-primary {}
+
+.link-secondary {}
+
+.link-tertiary {}
+
+
+
+
+
+
+
+
+
+
+
+/*Heading*/
+
+.heading {
+    text-align: center;
+    font-weight: 600;
+    &.heading-1 {
+        @include fontSize(22px);
+    }
+
+    &.heading-2 {
+        text-transform: uppercase;
+        @include fontSize(14px);
+    }
+
+    &.heading-3 {}
+
+    &.heading-4 {}
+}
+
+
+
+
+
+
+
+
+
+
+/*Paragraphs*/
+
+.paragraph-1 {}
+
+.paragraph-2 {}
+
+
+.banner {
+    font-weight: 600;
+    text-align: center;
+    @include fontSize(14px);
+    .heading {
+        padding-bottom: 20px;
+    }
+    .footer-link {
+        padding: 20px 0px 4px 0px;
+        background: none;
+        display: inline-block;
+        text-transform: uppercase;
+        position: relative;
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid #000;
+            content: ""
+        }
+    }
+}

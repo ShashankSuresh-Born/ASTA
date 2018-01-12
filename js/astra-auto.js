@@ -39,7 +39,7 @@ $(document).ready(function() {
             header = $('.astra-auto-header'),
             scroll = $(window).scrollTop();
 
-        if (scroll >= 100) {
+        if (scroll > 10) {
             body.addClass('fixed');
             topHeader.addClass('hide');
         } else {
@@ -48,8 +48,19 @@ $(document).ready(function() {
         }
     });
 
-    $(".single-item").slick({
+    $(".main-banner").slick({
         dots: true,
+        arrows: false
+    });
+
+    $(".steps-banner").slick({
+        dots: true,
+        arrows: false
+    });
+
+    $(".maintenance-banner").slick({
+        dots: true,
+        centerMode: true,
         arrows: false
     });
 });

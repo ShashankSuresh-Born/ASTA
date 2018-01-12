@@ -40,7 +40,47 @@ i {
 
 /*Text Links*/
 /*Heading*/
+.heading {
+  text-align: center;
+  font-weight: 600;
+}
+.heading.heading-1 {
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+.heading.heading-2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
 /*Paragraphs*/
+.banner {
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.banner .heading {
+  padding-bottom: 20px;
+}
+.banner .footer-link {
+  padding: 20px 0px 4px 0px;
+  background: none;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+}
+.banner .footer-link:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #000;
+  content: "";
+}
+
 .__main .__container {
   position: relative;
 }
@@ -347,7 +387,7 @@ i {
   right: 0;
   margin-top: -128px;
   background-color: #EC2256;
-  z-index: 100000001;
+  z-index: 9999999;
   border-radius: 8px;
   padding: 4px 14px 4px 16px;
 }
@@ -368,6 +408,25 @@ i {
 }
 .chat .__content .__label label {
   color: #FFFFFF;
+}
+
+.steps .__content .slick-dots li button:before {
+  font-size: 10px;
+}
+
+.maintenance-steps .content {
+  text-align: center;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.maintenance-steps .maintenance-banner .slick-slide {
+  margin: 0px 10px;
+}
+.maintenance-steps .maintenance-banner .slick-slide img {
+  width: 100%;
+}
+.maintenance-steps .maintenance-banner .slick-dots li button:before {
+  font-size: 10px;
 }
 
 html,
@@ -601,11 +660,6 @@ p {
     display: block;
   }
 }
-/*Only for testing*/
-body {
-  min-height: 2000px;
-}
-
 .astra-auto-header {
   left: 0;
   position: fixed;
@@ -649,7 +703,13 @@ body {
 }
 
 .fixed .astra-auto-header {
-  top: -34px;
+  top: -17px;
+  z-index: 9999999999999;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+.fixed .astra-navbar {
+  padding: 0px !important;
 }
 
 .main-banner {
