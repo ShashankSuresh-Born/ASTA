@@ -1,0 +1,27 @@
+$recommendataions: "recommendataions-cars";
+
+.#{$recommendataions} {
+    padding: 20px 0;
+    .recommendataions-cars-banner {
+        position: relative;
+        .__image-container {
+            position: relative;
+            padding-top: 18px;
+            &::before {
+                position: absolute;
+                right: 41px;
+                top: 10px;
+                content: "\f08a";
+                font-family: "FontAwesome";
+                color: $amarnath-color
+            }
+        }
+        .sub-heading {
+            @include fontSize(14px);
+            text-transform: uppercase;
+        }
+    }
+    .__search {
+        padding: 30px 48px;
+    }
+}

@@ -1,0 +1,51 @@
+$news: "news-steps";
+
+.#{$news} {
+    background-color: $alabaster-color;
+    padding: 30px 0px;
+    overflow: hidden;
+    .heading {
+        padding-bottom: 10px;
+    }
+    .news-banner {
+        .content {
+            padding: 0 !important;
+            p {
+                margin-bottom: 0;
+            }
+            .__date {
+                @include fontSize(14px);
+                font-weight: 700;
+                padding-top: 20px;
+            }
+            .__heading {
+                @include fontSize(22px);
+                font-weight: 700;
+                text-transform: capitalize;
+            }
+            .__descrption {
+                @include fontSize(14px);
+                font-weight: 700;
+            }
+        }
+        .slick-slide {
+            margin: 0px 10px;
+            img {
+                width: 100%;
+            }
+        }
+        .slick-dots {
+            bottom: -42px;
+            li {
+                button {
+                    &:before {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .__search {
+        padding: 30px 48px;
+    }
+}

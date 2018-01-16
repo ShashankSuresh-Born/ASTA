@@ -50,8 +50,8 @@ i {
 }
 .heading.heading-2 {
   text-transform: uppercase;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 /*Paragraphs*/
@@ -79,6 +79,35 @@ i {
   height: 1px;
   border-bottom: 1px solid #000;
   content: "";
+}
+.banner.arrow .slick-arrow {
+  border: none;
+  position: absolute;
+  font-size: 18px;
+  z-index: 1000000001;
+  bottom: 14px;
+}
+.banner.arrow .fa-arrow-right {
+  right: 20px;
+}
+.banner.arrow .fa-arrow-left {
+  left: 20px;
+}
+.banner.arrow .__image-container img {
+  height: calc(50vh - 100px);
+  width: auto;
+  margin: 0 auto;
+}
+.banner.arrow .content p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.banner.arrow .content .car-title {
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+.banner.arrow .content .car-price {
+  font-weight: 700;
 }
 
 .__main .__container {
@@ -410,14 +439,62 @@ i {
   color: #FFFFFF;
 }
 
+.steps {
+  padding: 20px 0px 30px 0px;
+}
+.steps .__content .content {
+  padding: 0px 30px;
+}
+.steps .__content .slick-dots {
+  bottom: -42px;
+}
 .steps .__content .slick-dots li button:before {
   font-size: 10px;
 }
 
+.maintenance-steps {
+  background-color: #F8F8F8;
+  padding: 30px 0px;
+  overflow: hidden;
+}
+.maintenance-steps .heading {
+  padding-bottom: 10px;
+}
 .maintenance-steps .content {
   text-align: center;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  padding: 0px 30px 20px 30px;
+  font-weight: 600;
+}
+.maintenance-steps .maintenance-banner .content {
+  padding: 0 !important;
+}
+.maintenance-steps .maintenance-banner .__image-container {
+  position: relative;
+}
+.maintenance-steps .maintenance-banner .__image-container a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.maintenance-steps .maintenance-banner .__image-container a i {
+  border: none;
+  color: #FFFFFF;
+  font-size: 32px;
+}
+.maintenance-steps .maintenance-banner .__image-container p {
+  position: absolute;
+  text-transform: uppercase;
+  color: #FFFFFF;
   font-size: 12px;
-  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  transform: translate(-50%, -50%);
+  bottom: 30px;
+  left: 50%;
 }
 .maintenance-steps .maintenance-banner .slick-slide {
   margin: 0px 10px;
@@ -425,8 +502,107 @@ i {
 .maintenance-steps .maintenance-banner .slick-slide img {
   width: 100%;
 }
+.maintenance-steps .maintenance-banner .slick-dots {
+  bottom: -42px;
+}
 .maintenance-steps .maintenance-banner .slick-dots li button:before {
   font-size: 10px;
+}
+
+.explore-cars {
+  padding: 20px 0;
+}
+.explore-cars .explore-cars-banner {
+  position: relative;
+}
+
+.recommendataions-cars {
+  padding: 20px 0;
+}
+.recommendataions-cars .recommendataions-cars-banner {
+  position: relative;
+}
+.recommendataions-cars .recommendataions-cars-banner .sub-heading {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.recommendataions-cars .__search {
+  padding: 30px 48px;
+}
+
+.recommendataions-cars {
+  padding: 20px 0;
+}
+.recommendataions-cars .recommendataions-cars-banner {
+  position: relative;
+}
+.recommendataions-cars .recommendataions-cars-banner .__image-container {
+  position: relative;
+  padding-top: 18px;
+}
+.recommendataions-cars .recommendataions-cars-banner .__image-container::before {
+  position: absolute;
+  right: 41px;
+  top: 10px;
+  content: "\f08a";
+  font-family: "FontAwesome";
+  color: #EC2256;
+}
+.recommendataions-cars .recommendataions-cars-banner .sub-heading {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.recommendataions-cars .__search {
+  padding: 30px 48px;
+}
+
+.news-steps {
+  background-color: #F8F8F8;
+  padding: 30px 0px;
+  overflow: hidden;
+}
+.news-steps .heading {
+  padding-bottom: 10px;
+}
+.news-steps .news-banner .content {
+  padding: 0 !important;
+}
+.news-steps .news-banner .content p {
+  margin-bottom: 0;
+}
+.news-steps .news-banner .content .__date {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding-top: 20px;
+}
+.news-steps .news-banner .content .__heading {
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.news-steps .news-banner .content .__descrption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.news-steps .news-banner .slick-slide {
+  margin: 0px 10px;
+}
+.news-steps .news-banner .slick-slide img {
+  width: 100%;
+}
+.news-steps .news-banner .slick-dots {
+  bottom: -42px;
+}
+.news-steps .news-banner .slick-dots li button:before {
+  font-size: 10px;
+}
+.news-steps .__search {
+  padding: 30px 48px;
 }
 
 html,

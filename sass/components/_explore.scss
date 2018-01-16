@@ -1,0 +1,26 @@
+$explore: "explore-cars";
+
+.#{$explore} {
+	padding: 20px 0;
+    .explore-cars-banner {
+        position: relative;
+    }
+}
+
+
+
+$recommendataions: "recommendataions-cars";
+
+.#{$recommendataions} {
+	padding: 20px 0;
+    .recommendataions-cars-banner {
+        position: relative;
+        .sub-heading {
+        	@include fontSize(14px);
+        	text-transform: uppercase;
+        }
+    }
+    .__search {
+    	padding: 30px 48px;
+    }
+}

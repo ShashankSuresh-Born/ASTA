@@ -63,4 +63,32 @@ $(document).ready(function() {
         centerMode: true,
         arrows: false
     });
+
+    $(".explore-cars-banner").slick({
+        arrows: true,
+        dots: false,
+        lazyLoad: 'ondemand',
+        centerMode: true,
+        adaptiveHeight: true,
+        variableWidth: true,
+        prevArrow: '<i class="fa fa-arrow-right" aria-hidden="true"></i>',
+        nextArrow: '<i class="fa fa-arrow-left" aria-hidden="true"></i>'
+    });
+
+    $(".recommendataions-cars-banner").slick({
+        arrows: true,
+        dots: false,
+        lazyLoad: 'ondemand',
+        centerMode: true,
+        adaptiveHeight: true,
+        variableWidth: true,
+        prevArrow: '<i class="fa fa-arrow-right" aria-hidden="true"></i>',
+        nextArrow: '<i class="fa fa-arrow-left" aria-hidden="true"></i>'
+    });
+
+    $(".news-banner").slick({
+        dots: true,
+        centerMode: true,
+        arrows: false
+    });
 });

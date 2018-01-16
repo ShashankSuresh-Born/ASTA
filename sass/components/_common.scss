@@ -28,6 +28,8 @@
 
 
 
+
+
 /*Text Links*/
 
 .link-primary {}
@@ -35,7 +37,6 @@
 .link-secondary {}
 
 .link-tertiary {}
-
 
 
 
@@ -57,13 +58,15 @@
 
     &.heading-2 {
         text-transform: uppercase;
-        @include fontSize(14px);
+        @include fontSize(13px);
     }
 
     &.heading-3 {}
 
     &.heading-4 {}
 }
+
+
 
 
 
@@ -102,6 +105,41 @@
             height: 1px;
             border-bottom: 1px solid #000;
             content: ""
+        }
+    }
+    &.arrow {
+        .slick-arrow {
+            border: none;
+            position: absolute;
+            font-size: 18px;
+            z-index: 1000000001;
+            bottom: 14px;
+        }
+        .fa-arrow-right {
+            right: 20px;
+        }
+        .fa-arrow-left {
+            left: 20px;
+        }
+        .__image-container {
+            img {
+                height: calc(50vh - 100px);
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+        .content {
+            p {
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+            .car-title {
+                font-weight: 500;
+                padding-bottom: 4px;
+            }
+            .car-price {
+                font-weight: 700;
+            }
         }
     }
 }
